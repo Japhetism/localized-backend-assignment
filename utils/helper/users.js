@@ -6,6 +6,10 @@ exports.findOneByEmail = (userEmail) => {
     return allUsers.find(user => user.email === userEmail);
 }
 
+exports.findOneById = (userId) => {
+    return allUsers.find(user => user.id === userId);
+}
+
 exports.correctPassword = (user, password) => {
     return user.password === password;
 }

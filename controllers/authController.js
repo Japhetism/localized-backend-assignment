@@ -112,7 +112,7 @@ exports.protect = async (req, res, next) => {
         const decode = await promisify(jwt.verify)(token, process.env.JWT_SECRET);
 
         // 3) check if the user is exist (not deleted)
-        const user = await User.findById(decode.id).populate("roles");
+        const user = await Users.findOneById(decode.id);
         if (!user) {
             return next(new AppError(process.env.HTTP_UNAUTHORIZED_STATUS_CODE, process.env.ERROR_STATUS, 'This user is no longer exist'), req, res, next);
         }
