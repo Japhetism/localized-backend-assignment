@@ -9,6 +9,7 @@ const bodyParser = require('body-parser');
 
 
 const userRoutes = require('./routes/userRoutes');
+const newsFeedsRoutes = require('./routes/newsFeedsRoutes');
 const supportTicketRoutes = require('./routes/supportTicketRoutes');
 const globalErrHandler = require('./controllers/errorController');
 const AppError = require('./utils/appError');
@@ -47,6 +48,7 @@ app.use(hpp());
 
 // Routes
 app.use('/api/v1', userRoutes)
+app.use('/api/v1', newsFeedsRoutes)
 app.use('/api/v1', supportTicketRoutes)
 
 // Handle unexisting routes

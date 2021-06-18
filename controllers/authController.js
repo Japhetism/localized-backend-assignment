@@ -3,7 +3,6 @@ const {
 } = require('util');
 const jwt = require('jsonwebtoken');
 const User = require('../models/userModel');
-const Role = require('../models/roleModel');
 const AppError = require('../utils/appError');
 const Users = require('../utils/helper/users')
 
@@ -17,6 +16,7 @@ const createToken = id => {
 };
 
 exports.login = async (req, res, next) => {
+    console.log("got to login")
     try {
         const {
             email,
