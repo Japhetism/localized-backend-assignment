@@ -1,7 +1,8 @@
 const NewsFeeds = require('../fixtures/news-feeds');
+const Helper = require('./helper');
 
 const allNewsFeeds = NewsFeeds.getNewsFeeds();
     
 exports.find = () => {
-    return allNewsFeeds;
+    return Helper.sort(allNewsFeeds);
 }

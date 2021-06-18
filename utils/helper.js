@@ -11,3 +11,7 @@ exports.paginate = (doc, req) => {
         metaData: paginationInfo
     }
 }
+
+exports.sort = (doc, sort = 'date') => {
+    return doc.sort((a,b) => (a[sort] > b[sort]) ? 1 : ((b[sort] > a[sort]) ? -1 : 0))
+}

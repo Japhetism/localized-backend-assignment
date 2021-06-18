@@ -11,7 +11,6 @@ exports.getNewsFeeds = async (req, res, next) => {
             status: process.env.SUCCESS_STATUS,
             data: doc
         });
-
     } catch (error) {
         next(error);
     }
