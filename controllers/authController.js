@@ -2,9 +2,9 @@ const {
     promisify
 } = require('util');
 const jwt = require('jsonwebtoken');
-const User = require('../models/userModel');
+//const User = require('../models/userModel');
 const AppError = require('../utils/appError');
-const Users = require('../utils/helper/users')
+const User = require('../utils/users')
 
 
 const createToken = id => {
@@ -29,12 +29,12 @@ exports.login = async (req, res, next) => {
         }
 
         // 2) check if user exist and password is correct
-        const user = await Users.findOneByEmail(email);
+        const user = await User.findOneByEmail(email);
         // const user = await User.findOne({
         //     email
         // }).select('+password').populate("role");
 
-        if (!user || !await Users.correctPassword(user, password)) {
+        if (!user || !await User.correctPassword(user, password)) {
             return next(new AppError(process.env.HTTP_UNAUTHORIZED_STATUS_CODE, process.env.ERROR_STATUS, 'Email or Password is wrong'), req, res, next);
         }
 
@@ -50,7 +50,7 @@ exports.login = async (req, res, next) => {
             token,
             token_type: process.env.AUTHORIZATION_TYPE,
             data: {
-                user: Users.serializeUserData(user)
+                user: User.serializeUserData(user)
             }
         });
 
@@ -112,7 +112,7 @@ exports.protect = async (req, res, next) => {
         const decode = await promisify(jwt.verify)(token, process.env.JWT_SECRET);
 
         // 3) check if the user is exist (not deleted)
-        const user = await Users.findOneById(decode.id);
+        const user = await User.findOneById(decode.id);
         if (!user) {
             return next(new AppError(process.env.HTTP_UNAUTHORIZED_STATUS_CODE, process.env.ERROR_STATUS, 'This user is no longer exist'), req, res, next);
         }

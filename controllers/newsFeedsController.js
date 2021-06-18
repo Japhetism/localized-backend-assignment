@@ -1,23 +1,14 @@
-//const NewsFeeds = require('../models/newsFeedsModel');
 const base = require('./baseController');
-const NewsFeeds = require('../utils/helper/newsFeeds');
-
-//exports.getNewsFeeds = base.getAll(NewsFeeds);
+const NewsFeed = require('../utils/newsFeeds');
+const AppError = require('../utils/appError');
+const APIFeatures = require('../utils/apiFeatures');
+const Helper = require('../utils/helper');
 
 exports.getNewsFeeds = async (req, res, next) => {
-    console.log("get all news feeds")
-    console.log(req)
     try {
-        const doc = NewsFeeds.find();
-        // const features = new APIFeatures(Model.find(), req.query)
-        //     .sort()
-        //     .paginate();
-
-        // const doc = await features.query;
-
+        const doc = Helper.paginate(NewsFeed.find(), req);
         res.status(200).json({
             status: process.env.SUCCESS_STATUS,
-            count: doc.length,
             data: doc
         });
 

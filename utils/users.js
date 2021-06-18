@@ -1,4 +1,4 @@
-const Users = require('../../fixtures/users');
+const Users = require('../fixtures/users');
 
 const allUsers = Users.getUsers();
     
