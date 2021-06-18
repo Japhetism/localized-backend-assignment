@@ -3,19 +3,22 @@ exports.getUsers = () => {
 }
 
 const users = [
-    {   firstName: "Babatunde",
+    {   id: 1,
+        firstName: "Babatunde",
         lastName: "Ojo",
+        password: "password",
         email: "babatundeojo30@gmail.com",
-        mobile: "07053579784",
-        password: "password"
+        mobile: "07053579784"
     },
-    {   firstName: "James",
+    {   id: 2,
+        firstName: "James",
         lastName: "Doe",
         email: "jamesdoe@gmail.com",
         mobile: "07053579785",
         password: "password"
     },
-    {   firstName: "Doe",
+    {   id: 3,
+        firstName: "Doe",
         lastName: "John",
         email: "doejohn@gmail.com",
         mobile: "07053579786",

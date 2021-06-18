@@ -29,8 +29,7 @@ exports.login = async (req, res, next) => {
         }
 
         // 2) check if user exist and password is correct
-        const user = Users.findOneByEmail(email);
-        console.log(user);
+        const user = await Users.findOneByEmail(email);
         // const user = await User.findOne({
         //     email
         // }).select('+password').populate("role");
@@ -43,7 +42,7 @@ exports.login = async (req, res, next) => {
         const token = createToken(user.id);
 
         // Remove the password from the output 
-        user.password = undefined;
+        //user.password = undefined;
 
         res.status(process.env.HTTP_OK_STATUS_CODE).json({
             message: "Login process was successful.",
@@ -51,7 +50,7 @@ exports.login = async (req, res, next) => {
             token,
             token_type: process.env.AUTHORIZATION_TYPE,
             data: {
-                user
+                user: Users.serializeUserData(user)
             }
         });
 
