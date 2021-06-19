@@ -10,7 +10,15 @@
       }
     },
     "host": "localhost:4000",
-    "basePath": "/",
+    "basePath": "/api/v1",
+    "securityDefinitions": {
+        "Bearer": {
+            "type": "apiKey",
+            "name": "Authorization",
+            "in": "header",
+            "scheme": "bearer"
+        }
+    },
     "tags": [
         {
             "name": "Authentication",
@@ -61,6 +69,7 @@
         },
         "/news-feeds": {
             "get": {
+                "security": [ { "Bearer": [] } ],
                 "tags": ["NewsFeeds"],
                 "parameters": [
                     {  
