@@ -8,9 +8,10 @@ const cors = require('cors');
 const bodyParser = require('body-parser');
 
 
+const swaggerUi = require('swagger-ui-express');
+swaggerDocument = require('./swagger.json');
 const userRoutes = require('./routes/userRoutes');
 const newsFeedsRoutes = require('./routes/newsFeedsRoutes');
-const supportTicketRoutes = require('./routes/supportTicketRoutes');
 const globalErrHandler = require('./controllers/errorController');
 const AppError = require('./utils/appError');
 const app = express();
@@ -49,7 +50,9 @@ app.use(hpp());
 // Routes
 app.use('/api/v1', userRoutes)
 app.use('/api/v1', newsFeedsRoutes)
-app.use('/api/v1', supportTicketRoutes)
+
+// Swagger
+app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument));
 
 // Handle unexisting routes
 app.use('*', (req, res, next) => {

@@ -1,0 +1,161 @@
+{
+    "swagger": "2.0",
+    "info": {
+      "version": "0.1.9",
+      "title": "Babatunde Localized Backend Assignment",
+      "description": "News  Feeds Platform",
+      "license": {
+        "name": "MIT",
+        "url": "https://opensource.org/licenses/MIT"
+      }
+    },
+    "host": "localhost:4000",
+    "basePath": "/",
+    "paths": {
+        "/news-feeds": {
+            "get": {
+                "tags": ["NewsFeeds"],
+                "parameters": [
+                    {  
+                        "name": "currentPage",
+                        "in": "query",
+                        "description": "The current page number of news feeds",
+                        "required":false,
+                        "type": "number"
+                    },
+                    {  
+                        "name": "pageSize",
+                        "in": "query",
+                        "description": "The maximum number of news feeds return",
+                        "required":false,
+                        "type": "number"
+                    },
+                    {  
+                        "name": "sortBy",
+                        "in": "query",
+                        "description": "The way to sort the news feeds",
+                        "required":false,
+                        "type": "string"
+                    }
+                ],
+                "summary": "Get all news feeds in the system",
+                "responses": {
+                    "200": {
+                        "description": "Successful operation",
+                        "schema": {  
+                            "$ref": "#/definitions/NewsFeeds"
+                        }
+                    },
+                    "400": {  
+                        "description": "Invalid request",
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    },
+                    "401": {
+                        "description": "Unauthorized",
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    },
+                    "404": {
+                        "description": "Page not found",
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "definitions": {
+        "NewsFeeds": {
+            "properties": {
+                "status": {
+                    "type": "string"
+                },
+                "data": {
+                    "properties": {
+                        "responseData": {
+                            "type": "array",
+                            "items": {
+                                "type": "object",
+                                "properties": {
+                                    "id": {
+                                        "type": "integer",
+                                        "uniqueItems": true
+                                    },
+                                    "firstName": {
+                                        "type": "string"
+                                    },
+                                    "lastName": {
+                                        "type": "string"
+                                    },
+                                    "email": {
+                                        "type": "string"
+                                    },
+                                    "city": {
+                                        "type": "string"
+                                    },
+                                    "country": {
+                                        "type": "string"
+                                    },
+                                    "countryCode": {
+                                        "type": "string"
+                                    },
+                                    "date": {
+                                        "type": "string"
+                                    },
+                                    "message": {
+                                        "type": "string"
+                                    }
+                                }
+                            }
+                        },
+                        "metaData": {
+                            "type": "object",
+                            "properties": {
+                                "currentPage": {
+                                    "type": "number"
+                                },
+                                "pageCount": {
+                                    "type": "number"
+                                },
+                                "pageSize": {
+                                    "type": "number"
+                                },
+                                "count": {
+                                    "type": "number"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "NewsFeeds": {
+                "type": "array",
+                "$ref": "#/definitions/NewsFeeds"
+            }
+        },
+        "Error": {
+            "properties": {
+                "message": {
+                    "type": "string"
+                },
+                "status": {
+                    "type": "string"
+                },
+                "data": {
+                    "nullable": true
+                }
+            },
+            "Error": {
+                "type": "array",
+                "$ref": "#/definitions/Error"
+            }
+        }
+    },
+    "schemes": ["http"],
+    "consumes": ["application/json"],
+    "produces": ["application/json"]
+}
