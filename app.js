@@ -52,16 +52,12 @@ app.use('/api/v1', userRoutes)
 app.use('/api/v1', newsFeedsRoutes)
 
 // Swagger
-var options = {
+let options = {
     swaggerOptions: {
       authAction :{ JWT: {name: "JWT", schema: {type: "apiKey", in: "header", name: "Authorization", description: ""}, value: "Bearer <JWT>"} }
     }
-};
-
-console.log(options)
-  
+};  
 app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument, options));
-//app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument));
 
 // Handle unexisting routes
 app.use('*', (req, res, next) => {
