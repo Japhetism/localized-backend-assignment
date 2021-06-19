@@ -11,7 +11,54 @@
     },
     "host": "localhost:4000",
     "basePath": "/",
+    "tags": [
+        {
+            "name": "Authentication",
+            "description": "API for user authentication"
+        },
+        {
+            "name": "NewsFeeds",
+            "description": "API for news feeds"
+        }
+    ],
     "paths": {
+        "/login": {
+            "post": {
+                "tags": ["Authentication"],
+                "parameters": [
+                    {
+                        "name": "user",
+                        "in": "body",
+                        "description": "Login request",
+                        "schema": {
+                          "$ref": "#/definitions/AuthenticationRequest"
+                        }
+                    }
+                ],
+                "produces": ["application/json"],
+                "summary": "User login",
+                "responses": {
+                    "200": {
+                        "description": "Successful login response",
+                        "schema": {
+                            "$ref": "#/definitions/AuthenticationResponse"
+                        }
+                    },
+                    "400": {  
+                        "description": "Bad request",
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    },
+                    "401": {
+                        "description": "Unauthorized",
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }
+                }
+            }
+        },
         "/news-feeds": {
             "get": {
                 "tags": ["NewsFeeds"],
@@ -19,21 +66,21 @@
                     {  
                         "name": "currentPage",
                         "in": "query",
-                        "description": "The current page number of news feeds",
+                        "description": "Current page number of news feeds",
                         "required":false,
                         "type": "number"
                     },
                     {  
                         "name": "pageSize",
                         "in": "query",
-                        "description": "The maximum number of news feeds return",
+                        "description": "Maximum number of news feeds return",
                         "required":false,
                         "type": "number"
                     },
                     {  
                         "name": "sortBy",
                         "in": "query",
-                        "description": "The way to sort the news feeds",
+                        "description": "Sort entity",
                         "required":false,
                         "type": "string"
                     }
@@ -41,13 +88,13 @@
                 "summary": "Get all news feeds in the system",
                 "responses": {
                     "200": {
-                        "description": "Successful operation",
+                        "description": "Successful response",
                         "schema": {  
                             "$ref": "#/definitions/NewsFeeds"
                         }
                     },
                     "400": {  
-                        "description": "Invalid request",
+                        "description": "Bad request",
                         "schema": {
                             "$ref": "#/definitions/Error"
                         }
@@ -69,6 +116,65 @@
         }
     },
     "definitions": {
+        "AuthenticationRequest": {
+            "properties": {
+                "email": {
+                    "type": "string"
+                },
+                "password": {
+                    "type": "string"
+                }
+            },
+            "AuthenticationRequest": {
+                "type": "array",
+                "$ref": "#/definitions/AuthenticationRequest"
+            }
+        },
+        "AuthenticationResponse": {
+            "properties": {
+                "message": {
+                    "type": "string"
+                },
+                "status": {
+                    "type": "string"
+                },
+                "token": {
+                    "type": "string"
+                },
+                "token_type": {
+                    "type": "string"
+                },
+                "data": {
+                    "properties": {
+                        "user": {
+                            "type": "object",
+                            "properties": {
+                                "id": {
+                                    "type": "integer",
+                                    "uniqueItems": true
+                                },
+                                "firstName": {
+                                    "type": "string"
+                                },
+                                "lastName": {
+                                    "type": "string"
+                                },
+                                "email": {
+                                    "type": "string"
+                                },
+                                "mobile": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "AuthenticationResponse": {
+                "type": "array",
+                "$ref": "#/definitions/AuthenticationResponse"
+            }
+        },
         "NewsFeeds": {
             "properties": {
                 "status": {
@@ -146,6 +252,7 @@
                     "type": "string"
                 },
                 "data": {
+                    "type": "string",
                     "nullable": true
                 }
             },
