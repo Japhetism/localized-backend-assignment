@@ -57,7 +57,7 @@ let options = {
       authAction :{ JWT: {name: "JWT", schema: {type: "apiKey", in: "header", name: "Authorization", description: ""}, value: "Bearer <JWT>"} }
     }
 };  
-app.use('/api/documentation', swaggerUi.serve, swaggerUi.setup(swaggerDocument, options));
+app.use('/api/documentations', swaggerUi.serve, swaggerUi.setup(swaggerDocument, options));
 
 // Handle unexisting routes
 app.use('*', (req, res, next) => {
