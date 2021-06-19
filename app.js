@@ -58,6 +58,7 @@ let options = {
     }
 };  
 app.use('/api/documentation', swaggerUi.serve, swaggerUi.setup(swaggerDocument, options));
+app.use('/api', swaggerUi.serve, swaggerUi.setup(swaggerDocument, options));
 
 // Handle unexisting routes
 app.use('*', (req, res, next) => {
