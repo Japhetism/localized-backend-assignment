@@ -9,7 +9,7 @@
         "url": "https://opensource.org/licenses/MIT"
       }
     },
-    "host": "https://babatunde-assignment.herokuapp.com",
+    "host": "localhost:4000",
     "basePath": "/",
     "securityDefinitions": {
         "Bearer": {
