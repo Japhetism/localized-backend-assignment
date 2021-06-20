@@ -1,3 +1,4 @@
+const bcrypt = require('bcrypt');
 const Users = require('../fixtures/users');
 
 const allUsers = Users.getUsers();
@@ -10,8 +11,13 @@ exports.findOneById = (userId) => {
     return allUsers.find(user => user.id === userId);
 }
 
-exports.correctPassword = (user, password) => {
-    return user.password === password;
+exports.correctPassword = async (user, password) => {
+    return await bcrypt.compare(password, user.password)
+}
+
+exports.cryptPassword = async (password) => {
+    const salt = await bcrypt.genSalt(10);
+    return await bcrypt.hash(password, salt);
 }
 
 exports.serializeUserData = (user) => {

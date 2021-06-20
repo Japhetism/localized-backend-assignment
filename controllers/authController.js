@@ -16,7 +16,6 @@ const createToken = id => {
 };
 
 exports.login = async (req, res, next) => {
-    console.log("got to login")
     try {
         const {
             email,
