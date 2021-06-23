@@ -125,7 +125,8 @@ const newsFeeds = [
         "country": "Ukraine",
         "countryCode": "BZ",
         "date": "1997-01-24",
-        "message": "helloooooooooooooooooooooooooooooooooooooooooooooooooo world"
+        "message": "helloooooooooooooooooooooooooooooooooooooooooooooooooo world",
+        "image": "https://www.youtube.com/watch?v=BC19kwABFwc",
     },
     {
         "id": 76,
