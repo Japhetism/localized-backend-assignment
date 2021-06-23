@@ -126,7 +126,7 @@ const newsFeeds = [
         "countryCode": "BZ",
         "date": "1997-01-24",
         "message": "helloooooooooooooooooooooooooooooooooooooooooooooooooo world",
-        "image": "https://www.youtube.com/watch?v=BC19kwABFwc",
+        "video": "https://www.youtube.com/watch?v=BC19kwABFwc",
     },
     {
         "id": 76,
