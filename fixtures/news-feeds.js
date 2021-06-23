@@ -12,8 +12,8 @@ const newsFeeds = [
         "country": "Austria",
         "countryCode": "PL",
         "date": "1983-10-18",
-        "message": "helloooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo to you",
-        "image": "https://www.shaadidukaan.com/vogue/wp-content/uploads/2019/08/hug-kiss-images.jpg"
+        "message": "What if you had an app that has all the best afrobeat tunes dated from the 90's all the way down till today, curated just for you? Gruvy is an app that wants to help promote afrobeat music to a much wider audience around the world. Africa has a lot to offer and its melody is just one part of it and so it’s only right to design an app that has a carefully curated list of afrobeat music dated from the 1960s down to what’s on the trend table.The front cover features Burna boy, a top musician from Nigeria who was awarded a Grammy on March 14, 2021. The focus of the app is to delight its users with the afrobeat fusions and we do this by creating an appealing and intuitive interface and this is achieved through colors, text, patterns, illustrations e.t.c",
+        "image": "https://media-exp3.licdn.com/dms/image/C4E22AQFOZ02d_5_fXQ/feedshare-shrink_2048_1536/0/1623751878789?e=1627516800&v=beta&t=g38V_tsQ2gMzCjzCAT-3KWonXq0ooMZ6gx1SELe71rU"
     },
     {
         "id": 13,
