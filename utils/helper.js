@@ -13,5 +13,5 @@ exports.paginate = (doc, req) => {
 }
 
 exports.sort = (doc, sort = 'date') => {
-    return doc.sort((a,b) => (a[sort] > b[sort]) ? 1 : ((b[sort] > a[sort]) ? -1 : 0))
+    return doc.sort((a,b) => (a[sort] < b[sort]) ? 1 : ((b[sort] < a[sort]) ? -1 : 0))
 }

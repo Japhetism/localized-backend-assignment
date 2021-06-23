@@ -12,7 +12,8 @@ const newsFeeds = [
         "country": "Austria",
         "countryCode": "PL",
         "date": "1983-10-18",
-        "message": "helloooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo to you"
+        "message": "helloooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo to you",
+        "image": "https://www.shaadidukaan.com/vogue/wp-content/uploads/2019/08/hug-kiss-images.jpg"
     },
     {
         "id": 13,
@@ -23,7 +24,8 @@ const newsFeeds = [
         "country": "Solomon Islands",
         "countryCode": "MO",
         "date": "1984-04-03",
-        "message": "helloooooooooooooooooooooooooooooooooooooooooooooooooooooooo world"
+        "message": "helloooooooooooooooooooooooooooooooooooooooooooooooooooooooo world",
+        "image": "https://www.shaadidukaan.com/editor-img/image/others/kisses-hug-pics/Forehead-Kiss.jpg"
     },
     {
         "id": 45,
@@ -34,7 +36,8 @@ const newsFeeds = [
         "country": "Thailand",
         "countryCode": "AN",
         "date": "1999-05-11",
-        "message": "hellooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo world"
+        "message": "hellooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo world",
+        "image": "https://www.shaadidukaan.com/vogue/wp-content/uploads/2019/08/hug-kiss-images.jpg"
     },
     {
         "id": 95,
@@ -155,7 +158,8 @@ const newsFeeds = [
         "country": "Antarctica",
         "countryCode": "BY",
         "date": "1999-11-02",
-        "message": "helloooooooooooooooo world"
+        "message": "helloooooooooooooooo world",
+        "image": "https://www.shaadidukaan.com/vogue/wp-content/uploads/2019/08/hug-kiss-images.jpg"
     },
     {
         "id": 94,
@@ -199,7 +203,8 @@ const newsFeeds = [
         "country": "Solomon Islands",
         "countryCode": "SH",
         "date": "1999-11-02",
-        "message": "helloooooooooooo to you"
+        "message": "helloooooooooooo to you",
+        "image": "https://www.shaadidukaan.com/vogue/wp-content/uploads/2019/08/hug-kiss-images.jpg"
     },
     {
         "id": 99,
