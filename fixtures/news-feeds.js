@@ -11,7 +11,7 @@ const newsFeeds = [
         "city": "Vientiane",
         "country": "Austria",
         "countryCode": "PL",
-        "date": "1983-10-18",
+        "date": "2021-05-18",
         "message": "<div><p>What if you had an app that has all the best afrobeat tunes dated from the 90's all the way down till today, curated just for you?</p><p>Gruvy is an app that wants to help promote afrobeat music to a much wider audience around the world. Africa has a lot to offer and its melody is just one part of it and so it’s only right to design an app that has a carefully curated list of afrobeat music dated from the 1960s down to what’s on the trend table.The front cover features Burna boy, a top musician from Nigeria who was awarded a Grammy on March 14, 2021.</p><p>The focus of the app is to delight its users with the afrobeat fusions and we do this by creating an appealing and intuitive interface and this is achieved through colors, text, patterns, illustrations e.t.c</p></div>",
         "image": "https://media-exp3.licdn.com/dms/image/C4E22AQFOZ02d_5_fXQ/feedshare-shrink_2048_1536/0/1623751878789?e=1627516800&v=beta&t=g38V_tsQ2gMzCjzCAT-3KWonXq0ooMZ6gx1SELe71rU"
     },
@@ -23,9 +23,9 @@ const newsFeeds = [
         "city": "Harbin",
         "country": "Solomon Islands",
         "countryCode": "MO",
-        "date": "1984-04-03",
-        "message": "helloooooooooooooooooooooooooooooooooooooooooooooooooooooooo world",
-        "image": "https://www.shaadidukaan.com/editor-img/image/others/kisses-hug-pics/Forehead-Kiss.jpg"
+        "date": "2021-06-03",
+        "message": "<div>Following the release of South Africa's inflation numbers, I sat with <a href='#'>ARISE News</a>' <a href='#'>Aruoture Oddiri</a> to discuss inflation patterns in South Africa, Ghana, Nigeria & Senegal.</div>",
+        "video": "https://youtu.be/0CovmL0tFY8"
     },
     {
         "id": 45,
@@ -35,9 +35,8 @@ const newsFeeds = [
         "city": "Virginia Beach",
         "country": "Thailand",
         "countryCode": "AN",
-        "date": "1999-05-11",
-        "message": "hellooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo world",
-        "image": "https://www.shaadidukaan.com/vogue/wp-content/uploads/2019/08/hug-kiss-images.jpg"
+        "date": "2021-05-11",
+        "message": "<div>Today is my first day employed as a Software Engineer. It took a 6-month Bootcamp, 400 plus job applications, and close to 20 interviews and today it has paid off.</div>"
     },
     {
         "id": 95,
@@ -47,8 +46,9 @@ const newsFeeds = [
         "city": "Frankfurt",
         "country": "Sudan",
         "countryCode": "LK",
-        "date": "1992-12-01",
-        "message": "hellooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo to you"
+        "date": "2021-05-01",
+        "message": "<div><p>🦖🦍 Alert, alert: Godzilla and Kong are on the loose… in your living room! Unleash these iconic characters using AR on your Google app by searching “Godzilla vs. Kong” and clicking on “View in 3D.” → <a href='#'>goo.gle/3cQ2Pjl</a></p><p>Just be careful not to get in their way.</p></div>",
+        "image": "https://media-exp3.licdn.com/dms/image/C5622AQGnjD3-d5uxXA/feedshare-shrink_800/0/1624425257606?e=1627516800&v=beta&t=amorPV-0wLkRnEN9lhjIXXAy1RgopU6VOlvtY91BlSk"
     },
     {
         "id": 12,
@@ -58,8 +58,8 @@ const newsFeeds = [
         "city": "Makati City",
         "country": "Liberia",
         "countryCode": "CK",
-        "date": "1994-02-03",
-        "message": "helloooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo world"
+        "date": "2021-06-03",
+        "message": "<div>To the fathers we’ve lost;<br/>To the fathers we have;<br/>To the fathers we will have;<br/>To the fathers we will patner with;<br/>To the fathers we will raise;<br/>To the fathers who showed up every time.<br/>Happy Father’s Day. You are valued!<br/><p>Can’t believe everything that’s left is just memories, beautiful memories because you were so beautiful. If I had another chance: I would thank you, thank you for making yourself so available, thank you for your love, support and care.</p><p>To a beautiful soul, a fighter, I love you and I miss you so much Dad, and pray you Rest In Peace🕊</p></div>"
     },
     {
         "id": 66,
@@ -69,8 +69,8 @@ const newsFeeds = [
         "city": "Nagoya",
         "country": "Guinea",
         "countryCode": "IT",
-        "date": "1986-12-24",
-        "message": "hellooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo world"
+        "date": "2021-06-21",
+        "message": "<div>I don’t care whether you come into the office at 10 am.<br/>I don’t care if you choose to work from home or not.<br/>I don’t care if you work from the garage while they fix your car.<p>I hired you for a job and I trust you to get it done. Just let me know what you need from me to be successful in your role. And I will show up for you.</p><p>Life happens!<br/>You don’t need to justify to me why you need a day off.<br/>You don’t need to explain how sick your child is to leave early.<br/>You don’t need to apologize for having a personal life.</p><p>Yes, I care about results but I also care about you. We are all human and we are all adults. I lead people. I don’t run an adult day care center.</p><p>My advice for anyone hiring:<br/>1. Select the right people.<br/>2. Agree on deliverables (be crystal clear).<br/>3. Provide proper tools and support.<br/>4. Get out of their way.</p></div>"
     },
     {
         "id": 74,
@@ -80,8 +80,8 @@ const newsFeeds = [
         "city": "Phoenix",
         "country": "Singapore",
         "countryCode": "MG",
-        "date": "1988-07-22",
-        "message": "hellooooooooooo world"
+        "date": "2021-06-22",
+        "message": "<div><p>Learn how to write well === Become unstoppable</p>- Write Code<br/>- Write Copy<br/>- Write Emails<br/>- Write Support messages<br/>- Write Values<br/>- Write Design Docs<br/>- Write Processes<br/>- Write Strategies<br/>- Write Praises<br/>- Write Reports<br/>- Write Books<br/>- Write Blogs<br/>- Write Social Media posts<br/><p>Writing is ALL I did since starting my company. And weirdly enough, my product is a writing tool.</p><p>I'm glad I learned how to write — it's an absolutely necessary skill in a knowledge economy, in a creator economy.</p> <p>And I'm going to invest even more into it — watch me become a master writer.</p></div>"
     },
     {
         "id": 83,
@@ -91,8 +91,8 @@ const newsFeeds = [
         "city": "Roseau",
         "country": "Niger",
         "countryCode": "GH",
-        "date": "1992-06-25",
-        "message": "helloooooooooooooooooooooo to you"
+        "date": "2021-06-22",
+        "message": "<div>Benefits of Scaling and Polishing<br/>-Prevents tooth holes/cavities<br/>-Gum diseases<br/>-Fresh Breath<br/>-Removes Stains<br/>-Improved Smile<br/>-Improves Overall health<br/>-Saves Money<br/> <p>Dentistry is cheap, Neglect is expensive.</p></div>"
     },
     {
         "id": 21,
@@ -102,8 +102,9 @@ const newsFeeds = [
         "city": "Zürich",
         "country": "British Indian Ocean Territory",
         "countryCode": "CC",
-        "date": "1993-05-09",
-        "message": "helloooooooooooooooooooo to you"
+        "date": "2021-05-09",
+        "message": "<div><p>I watched this BBC documentary on Ethiopian migrants that brought tears to my eyes. 2 weeks of endurance trek with just water in search of a better life. The truth is Africans are suffering terribly. Poverty. Hunger. African leaders are not trying. Africa has the most mineral resources in the world, the richest yet the poorest continent. And the worst is we are always fighting each other. My tribe. My religion. We are always fighting for our tribe and religion yet we can't join heads together to fight our corrupt leaders.</p><p>I wanted to conclude by saying God help Africa, but at this point, it is not prayers we need. It is the action we need. We must wake up. All of us. Hold our leaders accountable. We are all stakeholders of the society and this concerns all of us.</p></div>",
+        "image": "https://media-exp3.licdn.com/dms/image/C4D22AQHIFlRHS_jNSA/feedshare-shrink_2048_1536/0/1624474318710?e=1627516800&v=beta&t=JT-uIWkeDwzxqApbfcYeuJ9w6n_VMQX__RCND_4tOGo"
     },
     {
         "id": 65,
@@ -113,8 +114,8 @@ const newsFeeds = [
         "city": "Guayaquil",
         "country": "Liberia",
         "countryCode": "CA",
-        "date": "1986-02-05",
-        "message": "hellooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo to you"
+        "date": "2021-06-05",
+        "message": '<div><p>Python Devs!</p><p>What is;</p><p>"1" + "1"</p></div>'
     },
     {
         "id": 32,
@@ -124,9 +125,9 @@ const newsFeeds = [
         "city": "Dakar",
         "country": "Ukraine",
         "countryCode": "BZ",
-        "date": "1997-01-24",
-        "message": "helloooooooooooooooooooooooooooooooooooooooooooooooooo world",
-        "video": "https://www.youtube.com/watch?v=BC19kwABFwc",
+        "date": "2021-05-24",
+        "message": "<div>Want to be a Better Manager? Pick up a copy of my book here👉 <a href='#'>https://lnkd.in/exn4c6f</a> True leaders lead by example!</div>",
+        "video": "https://media-exp3.licdn.com/dms/image/C4E22AQHpwJrF8S_XGA/feedshare-shrink_800/0/1624012767030?e=1627516800&v=beta&t=O24vsTOLJqRplIldxX4NiimmlUCdoXBani4GEAuxCgI",
     },
     {
         "id": 76,
@@ -136,8 +137,8 @@ const newsFeeds = [
         "city": "Taichung",
         "country": "Bolivia",
         "countryCode": "TF",
-        "date": "1991-11-04",
-        "message": "hellooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo world"
+        "date": "2021-06-04",
+        "message": "<div><p>I’ve learned that starting new habits doesn’t have to be complicated.</p><p>Working out could be 10 push ups a day.</p><p>Meditating could be 5 minutes per day.</p><p>Eating healthy could be 2 healthy meals a week.</p><p>Just getting started and increasing my effort over time has help me so much in getting the ball rolling.</p></div>"
     },
     {
         "id": 94,
@@ -147,8 +148,8 @@ const newsFeeds = [
         "city": "Bloemfontein",
         "country": "El Salvador",
         "countryCode": "PG",
-        "date": "1991-08-11",
-        "message": "helloooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo to you"
+        "date": "2021-06-11",
+        "message": "<div><p>I am very excited to be on <a href='https://konnect-babatunde-assignment.herokuapp.com'>Konnect</a>.</p><p>On my account I will post about my sporting, business, and social commitments. Of course, this includes my personal projects such as the Toni Kroos Foundation and the Toni Kroos Academy.</p><p>I am looking forward to meeting interesting people as well as getting and giving new input on current exciting topics.</p></div>"
     },
     {
         "id": 93,
@@ -158,9 +159,9 @@ const newsFeeds = [
         "city": "Mbabane",
         "country": "Antarctica",
         "countryCode": "BY",
-        "date": "1999-11-02",
-        "message": "helloooooooooooooooo world",
-        "image": "https://www.shaadidukaan.com/vogue/wp-content/uploads/2019/08/hug-kiss-images.jpg"
+        "date": "2021-05-02",
+        "message": "<div>Landing page Design</div>",
+        "image": "https://media-exp3.licdn.com/dms/image/C4D22AQFeZeWkRpD3Zw/feedshare-shrink_800/0/1624457278109?e=1627516800&v=beta&t=O8gELnEzPvS2KHENLxfKHYrevywyBjtaSXIaoXGuPUA"
     },
     {
         "id": 94,
@@ -170,8 +171,8 @@ const newsFeeds = [
         "city": "Alexandria",
         "country": "Heard Island and Mcdonald Islands",
         "countryCode": "MA",
-        "date": "1990-07-12",
-        "message": "helloooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo to you"
+        "date": "2021-06-12",
+        "message": "<div>I don't know if it's only a software engineer thing but it is such a great feeling when I see users finally utilizing the applications that I have spent a good portion of time developing! </div>"
     },
     {
         "id": 72,
@@ -181,8 +182,9 @@ const newsFeeds = [
         "city": "Kigali",
         "country": "Liberia",
         "countryCode": "SB",
-        "date": "1986-01-07",
-        "message": "helloooooooooooooooooooooooooooooooooooooo to you"
+        "date": "2021-05-07",
+        "message": "Am still learning...",
+        "image": "https://media-exp3.licdn.com/dms/image/C4D22AQGKFs7bBksaaw/feedshare-shrink_800/0/1623953884458?e=1627516800&v=beta&t=k5oaKpqlOZqw0xPG1cwKfMn8U5Ue6nzfM3zXxQMwTuY"
     },
     {
         "id": 27,
@@ -192,8 +194,9 @@ const newsFeeds = [
         "city": "Monrovia",
         "country": "Nicaragua",
         "countryCode": "CL",
-        "date": "1985-05-28",
-        "message": "helloooooooooooooooooooooooo to you"
+        "date": "2021-05-28",
+        "message": "<div><p>One of the most beautiful castles in the world - Hohenzollern castle in Baden-Württemberg, Germany...</p><p>Photo by: @_marcelsiebert [IG]</p></div>",
+        "image": "https://media-exp3.licdn.com/dms/image/C4E22AQHYCJTog-0RnQ/feedshare-shrink_2048_1536/0/1624441882822?e=1627516800&v=beta&t=KvF-0YyUf6aFyn082G_Faez16lg6cYbiHCMbrB8_Dnw"
     },
     {
         "id": 61,
@@ -203,9 +206,9 @@ const newsFeeds = [
         "city": "Panama City",
         "country": "Solomon Islands",
         "countryCode": "SH",
-        "date": "1999-11-02",
-        "message": "helloooooooooooo to you",
-        "image": "https://www.shaadidukaan.com/vogue/wp-content/uploads/2019/08/hug-kiss-images.jpg"
+        "date": "2021-05-02",
+        "message": "<div>D3 is a JavaScript framework that helps you bring data to life. To round off a course I took in Data Visualization with Data Driven Documents (D3.js), I created dynamic and interactive visualizations with raw .json data.</div>",
+        "image": "https://media-exp3.licdn.com/dms/image/C4D22AQEW4fnbFQ8PzA/feedshare-shrink_800/0/1624230714435?e=1627516800&v=beta&t=Bqw6Ry-r9BU-nTGC1d44W4nRG17uKIlLZd-xMGxH_XQ"
     },
     {
         "id": 99,
@@ -215,8 +218,8 @@ const newsFeeds = [
         "city": "Fukuoka",
         "country": "Antigua and Barbuda",
         "countryCode": "ZM",
-        "date": "1982-08-31",
-        "message": "hellooo to you"
+        "date": "2021-05-31",
+        "message": "<div><p>How do you enable an application to handle millions of users without using a loadbalancer and with 100 MB of RAM and 0.5 vCPU?</p><p>The answer is...<br/>.<br/>.<br/>.<br/>.<br/>.<br/>.<br/>.<br/>.<br/>...you can't</p></div>"
     },
     {
         "id": 34,
@@ -226,8 +229,8 @@ const newsFeeds = [
         "city": "Stuttgart",
         "country": "Serbia and Montenegro",
         "countryCode": "HM",
-        "date": "1992-05-22",
-        "message": "helloooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo world"
+        "date": "2021-05-22",
+        "message": "<div><p>VALUE and IMPORTANCE<br/>Importance has to do with relevance in the scheme of things in human existence and interactions.</p><p>Value is the price people are ready to pay for a thing or service.</p><p>It's the opportunity cost attached to your relationship with people and your services.</p><p>Air is very important and essential for living but nobody buys air.</p></div>"
     },
     {
         "id": 17,
@@ -237,7 +240,7 @@ const newsFeeds = [
         "city": "Johannesburg",
         "country": "Barbados",
         "countryCode": "ZA",
-        "date": "1980-03-16",
-        "message": "helloooooooooooo world"
+        "date": "2021-03-16",
+        "message": "<div>With evermore ransomware attacks disrupting service at all levels from government through corporate to private individuals occurring around the world it must surely be only a matter of time before blockchain technology is embraced to combat the threat. The move to decentralised data systems will make it virtually impossible (or at least financially unviable) for ransomware corruption to affect the honest, day to day activity of online tech users (just about everyone on the planet).<br/>Chainlify’s blockchain platform is at the forefront this transition as an ever growing number of developers are discovering. Why not try our free to use blockchain platform to see how you can expedite your blockchain ideas.</div>"
     }
 ]
