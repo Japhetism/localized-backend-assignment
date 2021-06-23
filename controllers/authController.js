@@ -127,7 +127,6 @@ exports.protect = async (req, res, next) => {
 // Authorization check if the user have rights to do this action
 exports.restrictTo = (...roles) => {
     return (req, res, next) => {
-        // console.log(req.user)
         // if (!roles.includes(req.user.role)) {
         //     return next(new AppError(process.env.HTTP_FORBIDDEN_STATUS_CODE, process.env.ERROR_STATUS, 'You are not allowed to do this action'), req, res, next);
         // }
