@@ -23,6 +23,9 @@ You can run with nodemon:
 
 ### `nodemon server.js`
 
-Runs the app in the development mode.\
-Open [http://localhost:4000](http://localhost:4000) to view it in the browser.
+Runs the app in the development mode.
+Server will be running on [http://localhost:4000](http://localhost:4000).
+
+API documentation can be found on 
+[http://localhost:4000/api/documentation/](http://localhost:4000/api/documentation/).
 
