@@ -27,5 +27,5 @@ Runs the app in the development mode.
 Server will be running on [http://localhost:4000](http://localhost:4000).
 
 API documentation can be found on 
-[http://localhost:4000/api/documentation/](http://localhost:4000/api/documentation/).
+[http://localhost:4000/api/docs](http://localhost:4000/api/docs).
 
